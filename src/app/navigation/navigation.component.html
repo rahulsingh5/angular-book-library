@@ -1,0 +1,30 @@
+<md-toolbar color="warn">
+  <span>BookLibrary</span>
+  <div class="search-section">
+    <form class="example-form">
+      <md-form-field class="example-full-width">
+        <input mdInput placeholder="Search books here...">
+      </md-form-field>
+    </form>
+    <md-icon class="example-icon">search</md-icon>
+  </div>
+  <div class="right-header-elements">
+    <button md-icon-button [mdMenuTriggerFor]="menu">
+      <md-icon>account_circle</md-icon>
+    </button>
+    <md-menu #menu="mdMenu">
+      <button md-menu-item>
+        <md-icon>supervisor_account</md-icon>
+        <span>sign up</span>
+      </button>
+      <button md-menu-item>
+        <md-icon>mood</md-icon>
+        <span>login in</span>
+      </button>
+      <button md-menu-item>
+        <md-icon>sentiment_very_dissatisfied</md-icon>
+        <span>logout</span>
+      </button>
+    </md-menu>
+  </div>
+</md-toolbar>

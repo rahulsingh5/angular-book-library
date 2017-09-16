@@ -1,0 +1,35 @@
+<md-expansion-panel>
+  <md-expansion-panel-header>
+    <md-panel-title>
+      book title
+    </md-panel-title>
+    <md-panel-description>
+      {{bookDetail.title}}
+    </md-panel-description>
+  </md-expansion-panel-header>
+
+  <md-card class="example-card">
+    <md-card-header>
+      <div md-card-avatar
+           [style.background]="'url(' + bookDetail.author_image + ')'"
+           [style.background-size]="'cover'">
+      </div>
+      <md-card-title>{{bookDetail.author}}</md-card-title>
+      <md-card-subtitle>{{bookDetail.release_date | date: 'yMMMd'}}</md-card-subtitle>
+    </md-card-header>
+    <img md-card-image src="{{bookDetail.image}}" alt="{{bookDetail.short_description}}">
+    <md-card-content>
+      <p>
+        {{bookDetail.long_description}}
+      </p>
+    </md-card-content>
+    <md-card-actions>
+      <button md-button>
+        <md-icon>thumb_up</md-icon>
+        LIKE</button>
+      <button md-button>
+        <md-icon>add_shopping_cart</md-icon>
+        ADD TO CART</button>
+    </md-card-actions>
+  </md-card>
+</md-expansion-panel>

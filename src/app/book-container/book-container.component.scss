@@ -1,0 +1,39 @@
+.app-book-container {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  .example-sidenav-fab-container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .example-sidenav-fab-container md-sidenav {
+    max-width: 300px;
+  }
+
+  .example-sidenav-fab-container .mat-sidenav-content,
+  .example-sidenav-fab-container md-sidenav {
+    display: flex;
+    overflow: visible;
+  }
+
+  .example-scrolling-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+
+  .book_item_space {
+    margin: 1em;
+  }
+
+  .example-fab {
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+  }
+}
